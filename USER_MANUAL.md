@@ -155,6 +155,12 @@ The sidebar has six pages:
   status flags (general fault, battery, fuse, tamper, comms, engineer on site).
 - **Settings** — everything below.
 
+> **Arming behaviour:** a full **Arm** takes effect immediately. A **Part-arm**
+> starts the panel's **exit timer** (about **30 seconds** by default) before it sets —
+> this is a behaviour of the Orisec panel itself, and that delay is fixed on the panel.
+> The same applies when arming from Home Assistant (full arm is immediate; part/home
+> arm runs the exit timer).
+
 The top bar on every page shows **CONNECTED/DISCONNECTED**, last update time, and
 **AC** / **BATT** status at a glance.
 
