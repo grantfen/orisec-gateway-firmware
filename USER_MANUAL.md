@@ -92,6 +92,10 @@ the one you wire to in Step 2.
 - Serial format: **9600 baud, 8N1**.
 - Do **not** use GPIO37/38 (console) or GPIO0 (boot) on the ESP32.
 
+![ESP32‑P4‑NANO wired to the panel's Com 2 (JP1) header — GPIO32, GPIO33 and GND](images/orisec-com2-wiring.webp)
+
+*Example wiring to the panel's **Com 2** connector (JP1): **GPIO32** and **GPIO33** carry the serial data and **GND** is the common ground. If you set **Com 1** (JP3) to CID Serial in Step 1 instead, wire to that connector the same way.*
+
 > **Panel user code:** the gateway sends a panel **user/access code** with every
 > command. Set it in **Settings → Panel Connection → Panel User Code** so it matches
 > a valid code configured on your panel.
