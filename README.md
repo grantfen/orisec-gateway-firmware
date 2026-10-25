@@ -11,7 +11,7 @@ plug the board in by USB, and click **Connect & Install**.
 
 ```
 pip install esptool
-esptool --chip esp32p4 -p <PORT> write-flash 0x0 firmware/orisec-gateway-1.0.3.bin
+esptool --chip esp32p4 -p <PORT> write-flash 0x0 firmware/orisec-gateway-1.0.4.bin
 ```
 
 Replace `<PORT>` with your serial port (e.g. `COM4` on Windows, `/dev/ttyUSB0` on Linux).
