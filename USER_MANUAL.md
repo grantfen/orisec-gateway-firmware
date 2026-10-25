@@ -156,10 +156,11 @@ The sidebar has six pages:
 - **Settings** — everything below.
 
 > **Arming behaviour:** a full **Arm** takes effect immediately. A **Part-arm**
-> starts the panel's **exit timer** (about **30 seconds** by default) before it sets —
-> this is a behaviour of the Orisec panel itself, and that delay is fixed on the panel.
-> The same applies when arming from Home Assistant (full arm is immediate; part/home
-> arm runs the exit timer).
+> starts a fixed **exit timer** of about **30 seconds** before it sets. This is a
+> behaviour of the Orisec panel over this interface — the ~30 s is fixed and is **not**
+> changed by the exit-time setting programmed in the panel, so there is nothing to adjust
+> there. The same applies when arming from Home Assistant (full arm is immediate;
+> part/home arm runs the exit timer).
 
 The top bar on every page shows **CONNECTED/DISCONNECTED**, last update time, and
 **AC** / **BATT** status at a glance.
