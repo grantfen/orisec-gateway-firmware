@@ -1,9 +1,13 @@
 # Orisec Gateway — User Manual
 
-Firmware **v1.0.5** · Hardware: Waveshare **ESP32‑P4‑NANO** · Panel: **Orisec CP20** (and compatible)
+Firmware **v1.0.5** · Hardware: Waveshare **ESP32‑P4‑NANO** · Panel: **Orisec CP20** (more models to follow)
 
 The Orisec Gateway connects to an Orisec alarm panel and exposes it as a secure
 web dashboard, and (optionally) to Home Assistant over MQTT.
+
+> **Tested panels:** so far the gateway has been tested only with the **Orisec CP20**.
+> Other Orisec panels use the same Contact ID serial protocol and are expected to work;
+> support for further models will be confirmed as they're tested.
 
 ---
 
