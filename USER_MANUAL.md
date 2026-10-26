@@ -1,6 +1,6 @@
 # Orisec Gateway — User Manual
 
-Firmware **v1.0.5** · Hardware: Waveshare **ESP32‑P4‑NANO** · Panel: **Orisec CP20** (more models to follow)
+Firmware **v1.0.6** · Hardware: Waveshare **ESP32‑P4‑NANO** · Panel: **Orisec CP20** (more models to follow)
 
 The Orisec Gateway connects to an Orisec alarm panel and exposes it as a secure
 web dashboard, and (optionally) to Home Assistant over MQTT.
@@ -37,7 +37,7 @@ web dashboard, and (optionally) to Home Assistant over MQTT.
 - Optional Home Assistant integration over MQTT with auto‑discovery.
 - Time kept in sync from the internet (NTP) and pushed to the panel.
 
-**Defaults (out of the box, v1.0.5):**
+**Defaults (out of the box, v1.0.6):**
 
 | Setting | Default |
 |---|---|
@@ -65,7 +65,7 @@ The easiest way is the browser installer — no tools to install.
 
 ```
 pip install esptool
-esptool --chip esp32p4 -p <PORT> write-flash 0x0 orisec-gateway-1.0.5.bin
+esptool --chip esp32p4 -p <PORT> write-flash 0x0 orisec-gateway-1.0.6.bin
 ```
 
 Replace `<PORT>` with your serial port (e.g. `COM4` on Windows, `/dev/ttyUSB0` on Linux).
@@ -299,4 +299,4 @@ returns the login to `admin/admin`.
 
 ---
 
-*Orisec Gateway · firmware v1.0.5 · installer: https://grantfen.github.io/orisec-gateway-firmware/*
+*Orisec Gateway · firmware v1.0.6 · installer: https://grantfen.github.io/orisec-gateway-firmware/*
